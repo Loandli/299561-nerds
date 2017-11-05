@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Студия веб-дизайна Нёрдс</title>
   </head>
   <body>
     <header class="maim-header">
@@ -26,55 +26,68 @@
       <section class="filters">
         <h2 class="visialy-hidden">Фильтр макетов</h2>
         <form action="#" method="post">
-          <p>СТОИМОСТЬ:</p><br>
-          <!---Я пока не понял как верстать блок со Стоимостью и бегунком-->
+          <h3>СТОИМОСТЬ:</h3>
+          <!--Я пока не понял как верстать блок со Стоимостью и бегунком-->
           <label>ОТ</label>
           <input type="text" name="minprice" value="0">
           <label>ДО</label>
           <input type="text" name="maxprice" value="15000">
           <br>
-          <p>СЕТКА:</p>
-          <label>
-          <input type="radio" name="grid" value="adapt" checked>
-            Адаптивная
-          </label>
-          <br>
-          <label>
-          <input type="radio" name="grid" value="fix">
-            Фиксированная
-          </label>
-          <br>
-          <label>
-          <input type="radio" name="grid" value="rubber">
-            Резиновая
-          </label>
-          <br>
-          <p>ОСОБЕННОСТИ:</p>
-          <label>
-          <input type="checkbox" name="slider" checked>
-            Слайдер
-          </label><br>
-          <label>
-          <input type="checkbox" name="benefits">
-            Блок преимуществ
-          </label><br>
-          <label>
-          <input type="checkbox" name="news" checked>
-            Новости
-          </label><br>
-          <label>
-          <input type="checkbox" name="gallery">
-            Галерея
-          </label><br>
-          <label>
-          <input type="checkbox" name="box">
-            Корзина
-          </label><br>
-          <input type="submit" value="ПОКАЗАТЬ">
+          <h3>СЕТКА:</h3>
+          <div class="filters-item">
+            <label>
+            <input type="radio" name="grid" value="adapt" checked>
+              Адаптивная
+            </label>
+          </div>
+          <div class="filters-item">
+            <label>
+              <input type="radio" name="grid" value="fix">
+              Фиксированная
+            </label>
+          </div>
+          <div class="filters-item">
+            <label>
+              <input type="radio" name="grid" value="rubber">
+              Резиновая
+            </label>
+          </div>
+          <h3>ОСОБЕННОСТИ:</h3>
+          <div class="filters-item">
+            <label>
+              <input type="checkbox" name="slider" checked>
+              Слайдер
+            </label>
+          </div>
+          <div class="filters-item">
+            <label>
+              <input type="checkbox" name="benefits">
+              Блок преимуществ
+            </label>
+          </div>
+          <div class="filters-item">
+            <label>
+              <input type="checkbox" name="news" checked>
+              Новости
+            </label>
+          </div>
+          <div class="filters-item">
+            <label>
+              <input type="checkbox" name="gallery">
+              Галерея
+            </label>
+          </div>
+          <div class="filters-item">
+            <label>
+              <input type="checkbox" name="box">
+              Корзина
+            </label>
+          </div>
+          <input type="submit" value="ПОКАЗАТЬ" class="button button-filters">
         </form>
       </section>
-      <!--- Здесь я описываю элемент Сортировать через список-->
-      <p>СОРТИРОВАТЬ:</p>
+      <!--Здесь я описываю элемент Сортировать через список-->
+      <h3>СОРТИРОВАТЬ:</h3>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-current">ПО ЦЕНЕ</li>
         <li><a href="#">ПО ТИПУ</a></li>
@@ -131,7 +144,7 @@
             <a class="button" href="#">9900 РУБ</a>
           </li>
         </ul>
-        <ul class="pagination-list-catalog">
+        <ul class="pagination-list">
           <li class="pagination-item plaginatiom-item-corrent"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
@@ -164,15 +177,19 @@
       <h2>Форма обратной связи</h2>
       <p><b>Напишите нам</b></p>
       <form action="#" method="post">
-        <label for="name-field">Ваше имя:</label>
-        <input type="text" name="name" id="name-field" value="Представтесь, пожалуйста">
-        <label for="email-field">Ваш e-mail:</label>
-        <input type="text" name="email" id="email-field" value="Для отправки ответа">
-        <br>
-        <label for="subcription-field">Текс письма:</label><br>
-        <textarea name="subcription" id="subcription-field" rows="5" cols="70">В свободной форме</textarea>
-        <br>
-        <input type="submit" value="ОТПРАВИТЬ">
+        <p>
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" name="name" id="name-field" value="Представтесь, пожалуйста">
+        </p>
+        <p>
+          <label for="email-field">Ваш e-mail:</label>
+          <input type="text" name="email" id="email-field" value="Для отправки ответа">
+        </p>
+        <p>
+          <label for="subcription-field">Текс письма:</label><br>
+          <textarea name="subcription" id="subcription-field" rows="5" cols="70">В свободной форме</textarea>
+        </p>
+        <input type="submit" value="ОТПРАВИТЬ" class="button buttom-feedback">
       </form>
     </section>
     </footer>
