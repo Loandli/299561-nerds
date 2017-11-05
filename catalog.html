@@ -25,72 +25,133 @@
       <h1 class="page-title">Магазин готовых шаблонов</h1>
       <section class="filters">
         <h2 class="visialy-hidden">Фильтр макетов</h2>
-        <!---Здесь будет форма фильтрации--->
-        <!---Я пока не понял как верстать блок со Стоимостью и бегунком и блок Сортировать--->
+        <form action="#" method="post">
+          <p>СТОИМОСТЬ:</p><br>
+          <!---Я пока не понял как верстать блок со Стоимостью и бегунком --->
+          <label>ОТ</label>
+          <input type="text" name="minprice" value="0">
+          <label>ДО</label>
+          <input type="text" name="maxprice" value="15000">
+          <br>
+          <p>СЕТКА:</p>
+          <label>
+          <input type="radio" name="grid" value="adapt" checked>
+            Адаптивная
+          </label>
+          <br>
+          <label>
+          <input type="radio" name="grid" value="fix">
+            Фиксированная
+          </label>
+          <br>
+          <label>
+          <input type="radio" name="grid" value="rubber">
+            Резиновая
+          </label>
+          <br>
+          <p>ОСОБЕННОСТИ:</p>
+          <label>
+          <input type="checkbox" name="slider" checked>
+            Слайдер
+          </label><br>
+          <label>
+          <input type="checkbox" name="benefits">
+            Блок преимуществ
+          </label><br>
+          <label>
+          <input type="checkbox" name="news" checked>
+            Новости
+          </label><br>
+          <label>
+          <input type="checkbox" name="gallery">
+            Галерея
+          </label><br>
+          <label>
+          <input type="checkbox" name="box">
+            Корзина
+          </label><br>
+          <input type="submit" value="ПОКАЗАТЬ">
+        </form>
+      </section>
+      <!--- Здесь я описываю элемент Сортировать через список --->
+      <p>СОРТИРОВАТЬ:</p>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-current">ПО ЦЕНЕ</li>
+        <li><a href="#">ПО ТИПУ</a></li>
+        <li><a href="#">ПО НАЗВАНИЮ</a></li>
+      </ul>
       </section>
       <section class="catalog">
         <ul class="catalog-list">
           <li class="catalog-item">
             <p><img src="#" width="50" height="50" alt="Шаблон SEDONA"></p>
             <h3><a href="#">SEDONA</a></h3>
-            <p>Информационный сайт<br>
-               для туристов</p>
-            <p class="catalog-item-price"><a class="button" href="#"><b>9900 РУБ</b></a></p>
+            <p>Информационный сайт
+               для туристов
+            </p>
+            <a class="button" href="#">9900 РУБ</a>
           </li>
           <li class="catalog-item">
             <p><img src="#" width="50" height="50" alt="Шаблон PINK APP"></p>
             <h3><a href="#">PINK APP</a></h3>
-            <p>Продуктовый лендинг<br>
-               приложения для iOS и Android</p>
-            <p class="catalog-item-price"><a class="button" href="#"><b>9900 РУБ</b></a></p>
+            <p>Продуктовый лендинг
+               приложения для iOS и Android
+            </p>
+            <a class="button" href="#">9900 РУБ</a>
           </li>
           <li class="catalog-item">
             <p><img src="#" width="50" height="50" alt="Шаблон BARBERSHOP"></p>
             <h3><a href="#">BARBERSHOP</a></h3>
-            <p>Сайт салона красоты.<br>
-               Для мужчин, да.</p>
-            <p class="catalog-item-price"><a class="button" href="#"><b>9900 РУБ</b></a></p>
+            <p>Сайт салона красоты.
+               Для мужчин, да.
+            </p>
+            <a class="button" href="#">9900 РУБ</a>
           </li>
           <li class="catalog-item">
             <p><img src="#" width="50" height="50" alt="Шаблон MISHKA"></p>
             <h3><a href="#">MISHKA</a></h3>
-            <p>Интернет-магазин<br>
-               вязанных игрушек</p>
-            <p class="catalog-item-price"><a class="button" href="#"><b>9900 РУБ</b></a></p>
+            <p>Интернет-магазин
+               вязанных игрушек
+            </p>
+            <a class="button" href="#">9900 РУБ</a>
           </li>
           <li class="catalog-item">
             <p><img src="#" width="50" height="50" alt="Шаблон А PLUS"></p>
             <h3><a href="#">А PLUS</a></h3>
-            <p>Лендинг курсов повышения<br>
-               квалификации</p>
-            <p class="catalog-item-price"><a class="button" href="#"><b>9900 РУБ</b></a></p>
+            <p>Лендинг курсов повышения
+               квалификации
+            </p>
+            <a class="button" href="#">9900 РУБ</a>
           </li>
           <li class="catalog-item">
             <p><img src="#" width="50" height="50" alt="Шаблон КВАСТ"></p>
             <h3><a href="#">КВАСТ</a></h3>
-            <p>Промо-сайт производителя<br>
-               крафтового кваса</p>
-            <p class="catalog-item-price"><a class="button" href="#"><b>9900 РУБ</b></a></p>
+            <p>Промо-сайт производителя
+               крафтового кваса
+            </p>
+            <a class="button" href="#">9900 РУБ</a>
           </li>
         </ul>
+        <ul class="pagination-list-catalog">
+          <li class="pagination-item plaginatiom-item-corrent"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Следующая</a></li>
+        </ul>
       </section>
-      <ul class="pagination-list-catalog">
-        <li class="pagination-item plaginatiom-item-corrent"><a>1</a></li>
-        <li class="pagination-item"><a href="#">2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a href="#">Следующая</a></li>
-      </ul>
     </main>
     <footer class="main-footer">
-      <!---Карта, как мне кажется, должна быть с Google Maps, а вот как поставить маркер на карте в виде логотипа я пока не понял--->
-      <a href="#"><img src="#" width="100" height="100" alt="Карта с адресом"></a>
-      <div class="footer-contacts">
-        <p><b>NERDS DESIGN STUDIO</b></p>
-        <p>191186,Санкт-Петербург,<br>
-           ул.Б.Конюшенная, д.19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a class="button" href="#">Напишите нам</a>
-      </div>
+      <section class="map">
+        <h2>Адрес компании</h2>
+        <img class="map-image" src="#" width="100" height="100" alt="Карта с адресом">
+        <div class="map-contacts">
+          <p><b>NERDS DESIGN STUDIO</b></p>
+          <p>191186,Санкт-Петербург,<br>
+            ул.Б.Конюшенная, д.19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="button button-contacts" href="#">Напишите нам</a>
+        </div>
+      </section>
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">Вконтакте</a></li>
@@ -98,8 +159,22 @@
           <li><a class="social-button" href="#">Инстаграмм</a></li>
         </ul>
       </div>
-      <h3>Давайте дружить, это выгодно!</h3>
+      <p><b>Давайте дружить, это выгодно!</b><p>
       <p>Скидка 10% для друзей из социальных сетей</p>
+    <section class="feedback">
+      <p><b>Напишите нам</b></p>
+      <form action="#" method="post">
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" name="name" id="name-field" value="Представтесь, пожалуйста">
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="text" name="email" id="email-field" value="Для отправки ответа">
+        <br>
+        <label for="subcription-field">Текс письма:</label><br>
+        <textarea name="subcription" id="subcription-field" rows="5" cols="70">В свободной форме</textarea>
+        <br>
+        <input type="submit" value="ОТПРАВИТЬ">
+      </form>
+    </section>
     </footer>
   </body>
   </html>
