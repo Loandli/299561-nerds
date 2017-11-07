@@ -27,12 +27,12 @@
         <h2 class="visialy-hidden">Фильтр макетов</h2>
         <form action="#" method="post">
           <h3>СТОИМОСТЬ:</h3>
-          <!--Я пока не понял как верстать блок со Стоимостью и бегунком-->
+          <div class="treckpad">
+            <span>Полоска с трекпадом</span>
+          </div>
           <div class="filters-item">
             <label>ОТ</label>
             <input type="text" name="minprice" value="0">
-          </div>
-          <div class="filters-item">
             <label>ДО</label>
             <input type="text" name="maxprice" value="15000">
           </div>
@@ -42,14 +42,10 @@
             <input type="radio" name="grid" value="adapt" checked>
               Адаптивная
             </label>
-          </div>
-          <div class="filters-item">
             <label>
               <input type="radio" name="grid" value="fix">
               Фиксированная
             </label>
-          </div>
-          <div class="filters-item">
             <label>
               <input type="radio" name="grid" value="rubber">
               Резиновая
@@ -61,45 +57,38 @@
               <input type="checkbox" name="slider" checked>
               Слайдер
             </label>
-          </div>
-          <div class="filters-item">
             <label>
               <input type="checkbox" name="benefits">
               Блок преимуществ
             </label>
-          </div>
-          <div class="filters-item">
             <label>
               <input type="checkbox" name="news" checked>
               Новости
             </label>
-          </div>
-          <div class="filters-item">
             <label>
               <input type="checkbox" name="gallery">
               Галерея
             </label>
-          </div>
-          <div class="filters-item">
             <label>
               <input type="checkbox" name="box">
               Корзина
             </label>
           </div>
+          <div class="filters-item">
           <input type="submit" value="ПОКАЗАТЬ" class="button button-filters">
+          </div>
         </form>
       </section>
-      <!--Здесь я описываю элемент Сортировать через список-->
       <h3>СОРТИРОВАТЬ:</h3>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs-current">ПО ЦЕНЕ</li>
+      <ul class="sort-list">
+        <li class="sort-list-current">ПО ЦЕНЕ</li>
         <li><a href="#">ПО ТИПУ</a></li>
         <li><a href="#">ПО НАЗВАНИЮ</a></li>
       </ul>
       <section class="catalog">
         <ul class="catalog-list">
           <li class="catalog-item">
-            <p><img src="#" width="50" height="50" alt="Шаблон SEDONA"></p>
+            <img src="#" width="50" height="50" alt="Шаблон SEDONA">
             <h3><a href="#">SEDONA</a></h3>
             <p>Информационный сайт
                для туристов
@@ -107,7 +96,7 @@
             <a class="button" href="#">9900 РУБ</a>
           </li>
           <li class="catalog-item">
-            <p><img src="#" width="50" height="50" alt="Шаблон PINK APP"></p>
+            <img src="#" width="50" height="50" alt="Шаблон PINK APP">
             <h3><a href="#">PINK APP</a></h3>
             <p>Продуктовый лендинг
                приложения для iOS и Android
@@ -115,7 +104,7 @@
             <a class="button" href="#">9900 РУБ</a>
           </li>
           <li class="catalog-item">
-            <p><img src="#" width="50" height="50" alt="Шаблон BARBERSHOP"></p>
+            <img src="#" width="50" height="50" alt="Шаблон BARBERSHOP">
             <h3><a href="#">BARBERSHOP</a></h3>
             <p>Сайт салона красоты.
                Для мужчин, да.
@@ -123,7 +112,7 @@
             <a class="button" href="#">9900 РУБ</a>
           </li>
           <li class="catalog-item">
-            <p><img src="#" width="50" height="50" alt="Шаблон MISHKA"></p>
+            <img src="#" width="50" height="50" alt="Шаблон MISHKA">
             <h3><a href="#">MISHKA</a></h3>
             <p>Интернет-магазин
                вязанных игрушек
@@ -131,7 +120,7 @@
             <a class="button" href="#">9900 РУБ</a>
           </li>
           <li class="catalog-item">
-            <p><img src="#" width="50" height="50" alt="Шаблон А PLUS"></p>
+            <img src="#" width="50" height="50" alt="Шаблон А PLUS">
             <h3><a href="#">А PLUS</a></h3>
             <p>Лендинг курсов повышения
                квалификации
@@ -139,7 +128,7 @@
             <a class="button" href="#">9900 РУБ</a>
           </li>
           <li class="catalog-item">
-            <p><img src="#" width="50" height="50" alt="Шаблон КВАСТ"></p>
+            <img src="#" width="50" height="50" alt="Шаблон КВАСТ">
             <h3><a href="#">КВАСТ</a></h3>
             <p>Промо-сайт производителя
                крафтового кваса
