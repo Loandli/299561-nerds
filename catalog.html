@@ -26,18 +26,20 @@
       <section class="filters">
         <h2 class="visialy-hidden">Фильтр макетов</h2>
         <form action="#" method="post">
-          <h3>СТОИМОСТЬ:</h3>
-          <div class="treckpad">
-            <span>Полоска с трекпадом</span>
-          </div>
+          <!--Фильтр по стоимости-->
           <div class="filters-item">
+            <h3>СТОИМОСТЬ:</h3>
+            <div class="treckpad">
+              <span>Полоска с трекпадом</span>
+            </div>
             <label>ОТ</label>
             <input type="text" name="minprice" value="0">
             <label>ДО</label>
             <input type="text" name="maxprice" value="15000">
           </div>
-          <h3>СЕТКА:</h3>
+          <!--Фильтр по сетке-->
           <div class="filters-item">
+            <h3>СЕТКА:</h3>
             <label>
             <input type="radio" name="grid" value="adapt" checked>
               Адаптивная
@@ -51,9 +53,10 @@
               Резиновая
             </label>
           </div>
-          <h3>ОСОБЕННОСТИ:</h3>
+          <!--Фильтр по особенностям-->
           <div class="filters-item">
-            <label>
+            <h3>ОСОБЕННОСТИ:</h3>
+              <label>
               <input type="checkbox" name="slider" checked>
               Слайдер
             </label>
@@ -74,17 +77,22 @@
               Корзина
             </label>
           </div>
+          <!--Кнопка Показать-->
           <div class="filters-item">
-          <input type="submit" value="ПОКАЗАТЬ" class="button button-filters">
+            <input type="submit" value="ПОКАЗАТЬ" class="button button-filters">
           </div>
         </form>
       </section>
-      <h3>СОРТИРОВАТЬ:</h3>
-      <ul class="sort-list">
-        <li class="sort-list-current">ПО ЦЕНЕ</li>
-        <li><a href="#">ПО ТИПУ</a></li>
-        <li><a href="#">ПО НАЗВАНИЮ</a></li>
-      </ul>
+      <section class="sort">
+        <h3>СОРТИРОВАТЬ:</h3>
+        <ul class="sort-list">
+          <li class="sort-list-current">ПО ЦЕНЕ</li>
+          <li><a href="#">ПО ТИПУ</a></li>
+          <li><a href="#">ПО НАЗВАНИЮ</a></li>
+        </ul>
+        <span><a href="#"><img src="#" width="10" height="10" alt="Cтрелочка Вниз"></a></span>
+        <span><a href="#"><img src="#" width="10" height="10" alt="Cтрелочка Вверх"></a></span>
+      </section>
       <section class="catalog">
         <ul class="catalog-list">
           <li class="catalog-item">
