@@ -27,8 +27,8 @@
         <h2 class="visialy-hidden">Фильтр макетов</h2>
         <form action="#" method="post">
           <!--Фильтр по стоимости-->
-          <div class="filters-item">
-            <h3>СТОИМОСТЬ:</h3>
+          <fieldset>
+            <legend>СТОИМОСТЬ:</legend>
             <div class="treckpad">
               <span>Трекпад цены</span>
             </div>
@@ -36,60 +36,77 @@
             <input type="text" name="minprice" value="0">
             <label>ДО</label>
             <input type="text" name="maxprice" value="15000">
-          </div>
+          </fieldset>
           <!--Фильтр по сетке-->
-          <div class="filters-item">
-            <h3>СЕТКА:</h3>
-            <label>
-            <input type="radio" name="grid" value="adapt" checked>
-            <img src="svg/radio-on.svg" width="25" height="25" alt="Радио выделенно">
-              Адаптивная
-            </label>
-            <label>
-              <input type="radio" name="grid" value="fix">
-              <img src="svg/radio-off.svg" width="25" height="25" alt="Радио пустое">
-              Фиксированная
-            </label>
-            <label>
-              <input type="radio" name="grid" value="rubber">
-              <img src="svg/radio-off.svg" width="25" height="25" alt="Радио пустое">
-              Резиновая
-            </label>
-          </div>
+          <fieldset>
+            <label>СЕТКА:</label>
+            <ul class="filters-list">
+              <li class="filters-item">
+                <label>
+                  <input class="visialy-hidden filter-item filter-item-radio" type="radio" name="grid" value="adapt" checked>
+                  <img src="svg/radio-on.svg" width="25" height="25" alt="Радио выделенно">
+                  Адаптивная
+                </label>
+              </li>
+              <li class="filters-item">
+                <label>
+                  <input class="visialy-hidden filter-item filter-item-radio" type="radio" name="grid" value="fix">
+                  <img src="svg/radio-off.svg" width="25" height="25" alt="Радио пустое">
+                  Фиксированная
+                </label>
+              </li>
+              <li class="filters-item">
+                <label>
+                  <input class="visialy-hidden filter-item filter-item-radio" type="radio" name="grid" value="rubber">
+                  <img src="svg/radio-off.svg" width="25" height="25" alt="Радио пустое">
+                  Резиновая
+                </label>
+              </li>
+            </ul>
+          </fieldset>
           <!--Фильтр по особенностям-->
-          <div class="filters-item">
-            <h3>ОСОБЕННОСТИ:</h3>
-            <label>
-            <input type="checkbox" name="slider" checked>
-            <img src="svg/checkbox-on.svg" width="27" height="23" alt="Чекбокс галочка">
-              Слайдер
-            </label>
-            <label>
-              <input type="checkbox" name="benefits">
-              <img src="svg/checkbox-off.svg" width="27" height="23" alt="Чекбокс пустой">
-              Блок преимуществ
-            </label>
-            <label>
-              <input type="checkbox" name="news" checked>
-              <img src="svg/checkbox-on.svg" width="27" height="23" alt="Чекбокс галочка">
-              Новости
-            </label>
-            <label>
-              <input type="checkbox" name="gallery">
-              <img src="svg/checkbox-off.svg" width="27" height="23" alt="Чекбокс пустой">
-              Галерея
-            </label>
-            <label>
-              <input type="checkbox" name="box">
-              <img src="svg/checkbox-off.svg" width="27" height="23" alt="Чекбокс пустой">
-              Корзина
-            </label>
-          </div>
+          <fieldset>
+            <legend>ОСОБЕННОСТИ:</legend>
+            <ul class="filters-list">
+              <li class="filters-item">
+                <label>
+                  <input class="visialy-hidden filter-item filter-item-checkbox" type="checkbox" name="slider" checked>
+                  <img src="svg/checkbox-on.svg" width="27" height="23" alt="Добавить блок со слайдами">
+                  Слайдер
+                </label>
+              </li>
+              <li class="filters-item">
+                <label>
+                  <input class="visialy-hidden filter-item filter-item-checkbox" type="checkbox" name="benefits">
+                  <img src="svg/checkbox-off.svg" width="27" height="23" alt="Добавить блок преимуществ">
+                  Блок преимуществ
+                </label>
+              </li>
+              <li class="filters-item">
+                <label>
+                  <input class="visialy-hidden filter-item filter-item-checkbox" type="checkbox" name="news" checked>
+                  <img src="svg/checkbox-on.svg" width="27" height="23" alt="Добавить блок с новостями">
+                  Новости
+                </label>
+              </li>
+              <li class="filters-item">
+                <label>
+                  <input class="visialy-hidden filter-item filter-item-checkbox"  type="checkbox" name="gallery">
+                  <img src="svg/checkbox-off.svg" width="27" height="23" alt="Добавить блок галерея">
+                  Галерея
+                </label>
+              </li>
+              <li class="filters-item">
+                <label>
+                  <input class="visialy-hidden filter-item filter-item-checkbox" type="checkbox" name="box">
+                  <img src="svg/checkbox-off.svg" width="27" height="23" alt="Добавить блок корзина">
+                  Корзина
+                </label>
+              </li>
+            </ul>
+          </fieldset>
           <!--Кнопка Показать-->
-          <div class="filters-item">
-            <!--Вот разве что этот элемент может быть кнопкой, стоит зделать?-->
-            <input type="submit" value="ПОКАЗАТЬ" class="button button-filters">
-          </div>
+            <button type="submit" class="button button-filters">Показать</button>
         </form>
       </section>
       <section class="sort">
@@ -99,8 +116,8 @@
           <li><a href="#">ПО ТИПУ</a></li>
           <li><a href="#">ПО НАЗВАНИЮ</a></li>
         </ul>
-        <a href="#">Cтрелочка Вниз"></a>
-        <a href="#">Cтрелочка Вверх</a>
+        <a href="#">Сортировать по убыванию></a>
+        <a href="#">Cортировать по возрастанию</a>
       </section>
       <section class="catalog">
         <ul class="catalog-list">
