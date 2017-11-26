@@ -27,7 +27,7 @@
         <h2 class="visialy-hidden">Фильтр макетов</h2>
         <form action="#" method="post">
           <!--Фильтр по стоимости-->
-          <fieldset>
+          <fieldset class="filters-item">
             <legend>СТОИМОСТЬ:</legend>
             <div class="treckpad">
               <span>Трекпад цены</span>
@@ -38,70 +38,46 @@
             <input type="text" name="maxprice" value="15000">
           </fieldset>
           <!--Фильтр по сетке-->
-          <fieldset>
-            <label>СЕТКА:</label>
+          <fieldset class="filters-item">
+            <legend>СЕТКА:</legend>
             <ul class="filters-list">
-              <li class="filters-item">
-                <label>
-                  <input class="visialy-hidden filter-item filter-item-radio" type="radio" name="grid" value="adapt" checked>
-                  <img src="svg/radio-on.svg" width="25" height="25" alt="Радио выделенно">
-                  Адаптивная
-                </label>
+              <li class="filters-option">
+                <input class="visialy-hidden filter-item filter-item-radio" type="radio" name="grid" value="adapt" id="filter-adapt" checked>
+                <label for="filter-adapt">Адаптивная</label>
               </li>
-              <li class="filters-item">
-                <label>
-                  <input class="visialy-hidden filter-item filter-item-radio" type="radio" name="grid" value="fix">
-                  <img src="svg/radio-off.svg" width="25" height="25" alt="Радио пустое">
-                  Фиксированная
-                </label>
+              <li class="filters-option">
+                  <input class="visialy-hidden filter-item filter-item-radio" type="radio" name="grid" value="fix" id="filter-fix">
+                <label for="filter-fix">Фиксированная</label>
               </li>
-              <li class="filters-item">
-                <label>
-                  <input class="visialy-hidden filter-item filter-item-radio" type="radio" name="grid" value="rubber">
-                  <img src="svg/radio-off.svg" width="25" height="25" alt="Радио пустое">
-                  Резиновая
-                </label>
+              <li class="filters-option">
+                <input class="visialy-hidden filter-item filter-item-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
           <!--Фильтр по особенностям-->
-          <fieldset>
+          <fieldset class="filters-item">
             <legend>ОСОБЕННОСТИ:</legend>
             <ul class="filters-list">
-              <li class="filters-item">
-                <label>
-                  <input class="visialy-hidden filter-item filter-item-checkbox" type="checkbox" name="slider" checked>
-                  <img src="svg/checkbox-on.svg" width="27" height="23" alt="Добавить блок со слайдами">
-                  Слайдер
-                </label>
+              <li class="filters-option">
+                <input class="visialy-hidden filter-item filter-item-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
               </li>
-              <li class="filters-item">
-                <label>
-                  <input class="visialy-hidden filter-item filter-item-checkbox" type="checkbox" name="benefits">
-                  <img src="svg/checkbox-off.svg" width="27" height="23" alt="Добавить блок преимуществ">
-                  Блок преимуществ
-                </label>
+              <li class="filters-option">
+                <input class="visialy-hidden filter-item filter-item-checkbox" type="checkbox" name="benefits" id="filter-benefits">
+                <label for="filter-benefits">Блок преимуществ</label>
               </li>
-              <li class="filters-item">
-                <label>
-                  <input class="visialy-hidden filter-item filter-item-checkbox" type="checkbox" name="news" checked>
-                  <img src="svg/checkbox-on.svg" width="27" height="23" alt="Добавить блок с новостями">
-                  Новости
-                </label>
+              <li class="filters-option">
+                <input class="visialy-hidden filter-item filter-item-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
               </li>
-              <li class="filters-item">
-                <label>
-                  <input class="visialy-hidden filter-item filter-item-checkbox"  type="checkbox" name="gallery">
-                  <img src="svg/checkbox-off.svg" width="27" height="23" alt="Добавить блок галерея">
-                  Галерея
-                </label>
+              <li class="filters-option">
+                <input class="visialy-hidden filter-item filter-item-checkbox"  type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
               </li>
-              <li class="filters-item">
-                <label>
-                  <input class="visialy-hidden filter-item filter-item-checkbox" type="checkbox" name="box">
-                  <img src="svg/checkbox-off.svg" width="27" height="23" alt="Добавить блок корзина">
-                  Корзина
-                </label>
+              <li class="filters-option">
+                <input class="visialy-hidden filter-item filter-item-checkbox" type="checkbox" name="box" id="filter-box">
+                <label for="filter-box">Корзина</label>
               </li>
             </ul>
           </fieldset>
