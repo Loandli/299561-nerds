@@ -3,61 +3,66 @@
   <head>
     <meta charset="utf-8">
     <title>Студия веб-дизайна Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="maim-header">
-      <nav class="main-nav">
-        <a class="main-header-logo>">
-          <img src="svg/nerds-logo.svg" width="160" height="65" alt="Логитип Nerds">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="magazine.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li><a href="box-link">Корзина</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="conteiner">
-      <h1 class="visialy-hidden">Студия веб-дизайна Нердс</h1>
-      <section class="slider">
-        <h2 class="visialy-hidden">Промо-слайды</h2>
-        <ul class="slider-list">
-          <li class="slider-item">
-            <h3>Долго, дорого,<br>
-                скурпулезно</h3>
-            <p>Математически выверенный дизайн<br>
-               для Вашего сайта и мобильного приложения
-            </p>
-            <img src="img/slide1.png" width="760" height="431" alt="Фото на промо">
-            <a class="button-slider-more" href="#">Узнать больше</a>
-          </li>
-          <li class="slider-item">
-            <h3>Любим математику<br>
-                как никто другой</h3>
-            <p>Никакого креатива, только математические формулы<br>
-               для расчета идеальных пропорций</p>
-            <img src="img/slide2.png" width="760" height="431" alt="Фото на промо">
-            <a class="button-slider-more" href="#">Узнать больше</a>
-          </li>
-          <li class="slider-item">
-            <h3>Только ночь,<br>
-                только хардкор</h3>
-            <p>Работать днем, как все? Мы против этого.<br>
-               Ближе к полуночи работа только начинается</p>
-            <img src="img/slide3.png" width="760" height="431" alt="Фото на промо">
-            <a class="button-slider-more" href="#">Узнать больше</a>
-          </li>
-        </ul>
-        <ul class="slider-list">
-          <li class="slider-indicator slider-indicator-corrent"><button class="slider-btn">Первый слайд</button></li>
-          <li class="slider-indicator"><button class="slider-btn">Второй слайд</button></li>
-          <li class="slider-indicator"><button class="slider-btn">Третий слайд</button></li>
-        </ul>
-      </section>
+    <div class="nav-background">
+      <header class="main-header">
+        <nav class="main-nav">
+          <a class="main-header-logo>" href="#">
+            <img src="svg/nerds-logo.svg" width="160" height="65" alt="Логитип Nerds">
+          </a>
+          <ul class="site-navigation">
+            <li><a href="studio.html">Студия</a></li>
+            <li><a href="clients.html">Клиенты</a></li>
+            <li><a href="magazine.html">Магазин</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+            <li><a href="box-link">Корзина</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="conteiner">
+        <h1 class="visialy-hidden">Студия веб-дизайна Нердс</h1>
+        <section class="slider">
+          <h2 class="visialy-hidden">Промо-слайды</h2>
+          <ul class="slider-list">
+            <li class="slider-item">
+              <h3>Долго, дорого,<br>
+                  скрупулезно</h3>
+              <p>Математически выверенный дизайн<br>
+                  для Вашего сайта и мобильного приложения
+              </p>
+              <img src="img/slide1.png" width="760" height="431" alt="Фото на промо">
+              <a class="button button-more" href="#">Узнать больше</a>
+            </li>
+            <li class="slider-item">
+              <h3>Любим математику<br>
+                  как никто другой</h3>
+              <p>Никакого креатива, только математические формулы<br>
+                  для расчета идеальных пропорций</p>
+              <img src="img/slide2.png" width="760" height="431" alt="Фото на промо">
+              <a class="button button-more" href="#">Узнать больше</a>
+            </li>
+            <li class="slider-item">
+              <h3>Только ночь,<br>
+                  только хардкор</h3>
+              <p>Работать днем, как все? Мы против этого.<br>
+                  Ближе к полуночи работа только начинается</p>
+              <img src="img/slide3.png" width="760" height="431" alt="Фото на промо">
+              <a class="button button-more" href="#">Узнать больше</a>
+            </li>
+          </ul>
+          <ul class="slider-list">
+            <li class="slider-indicator slider-indicator-corrent"><button class="slider-btn">Первый слайд</button></li>
+            <li class="slider-indicator"><button class="slider-btn">Второй слайд</button></li>
+            <li class="slider-indicator"><button class="slider-btn">Третий слайд</button></li>
+          </ul>
+        </section>
+      </div>
       <section class="servises-main">
         <h2 class="visialy-hidden">Направления работы нашей студии</h2>
         <ul class="servises-list">
@@ -85,30 +90,30 @@
         </ul>
       </section>
       <section class="self-promo">
-        <h2>О компании</h2>
-        <p><b>Мы - маленькая, но гордая
+        <h2 class="visialy-hidden">О компании</h2>
+        <p class="self-slogan"><b>Мы - маленькая, но гордая
            дизайн-студия из Краснодара</b></p>
         <p>Исповедуем принципы минимализма и чистоты.Ставим математический расчет
            превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <p><b>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</b></p>
+        <p class="worklist"><b>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</b></p>
         <ul class="self-promo-list">
           <li class="self-promo-item">Веб-сайтов любой сложности</li>
           <li class="self-promo-item">Мобильных приложений для iOS и Android</li>
           <li class="self-promo-item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
         <img src="img/nerds-illustration.png" width="360" height="208" alt="Логитип Nerds с яркий">
-        <p><b>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ</b></p>
+        <p class="atall"><b>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ</b></p>
         <ul class="selfnumbers-list">
           <li class="selfnumbers-item">
-            <p><b>146%</b></p>
+            <p><b>146<sup>%</sup></b></p>
             <p>Уровень самоотдачи</p>
           </li>
           <li class="selfnumbers-item">
-            <p><b>100%</b></p>
+            <p><b>100<sup>%</sup></b></p>
             <p>Соблюдение сроков</p>
           </li>
           <li class="selfnumbers-item">
-            <p><b>50%</b></p>
+            <p><b>50<sup>%</sup></b></p>
             <p>Минимальная предоплата</p>
           </li>
         </ul>
@@ -157,22 +162,22 @@
           </li>
         </ul>
       </div>
-      <p><b>Давайте дружить, это выгодно!</b><p>
+      <p class="befriends"><b>Давайте дружить, это выгодно!</b><p>
       <p>Скидка 10% для друзей из социальных сетей</p>
     <section class="feedback">
-      <h2>Форма обратной связи</h2>
+      <h2 class="visialy-hidden">Форма обратной связи</h2>
       <p><b>Напишите нам</b></p>
       <img class="close-cross" src="svg/close-cross.svg" width="21" height="21" alt="Закрывающий крестик">
-      <form action="#" method="post">
-        <p>
+      <form class="feedback-form" action="#" method="post">
+        <p class="feedback-form-item">
           <label for="name-field">Ваше имя:</label>
           <input type="text" name="name" id="name-field" value="Представтесь, пожалуйста">
         </p>
-        <p>
+        <p class="feedback-form-item">
           <label for="email-field">Ваш e-mail:</label>
           <input type="text" name="email" id="email-field" value="Для отправки ответа">
         </p>
-        <p>
+        <p class="feedback-form-item">
           <label for="subcription-field">Текс письма:</label><br>
           <textarea name="subcription" id="subcription-field" rows="5" cols="70">В свободной форме</textarea>
         </p>

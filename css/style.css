@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: : 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+
+  background-color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+.nav-background {
+  background-color: #eeeeee;
+}
+.main-nav {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+.main-header-logo img:active {
+  opacity:0.3;
+}
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: #fb565a;
+}
+.site-navigation a:active,
+.user-navigation a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+.site-navigation a:visited,
+.user-navigation a:visited {
+  border-bottom: 1px solid #fb565a;
+}
+.slider-list {
+  list-style: none;
+}
+.slider-item h3 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 400;
+  color: #000000;
+}
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+.button:hover {
+  background-color: #e74246;
+}
+.button:focus {
+  background-color: #d7373b;
+  opacity: 0.3;
+}
+.servise-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+.self-slogan {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+.self-promo-list {
+  list-style: none;
+}
+.worklist {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+.atall {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+.selfnumbers-item {
+  list-style: none;
+}
+.selfnumbers-item p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #283136;
+}
+.selfnumbers-item p b {
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: 700;
+  color: #000000;
+}
+.done-project-list {
+  list-style: none;
+}
+.done-project-item {
+  opacity: 0.2;
+}
+.done-project-item:hover {
+  opacity: 1.0;
+}
+.done-project-item:active {
+  opacity: 0.1;
+}
+.map-contacts p b {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+.map-contacts p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+.footer-social ul {
+  list-style: none;
+}
+.social-button {
+  color:
+}
+.befriends {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+.feedback p b {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+.feedback-form-item label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+.feedback-form-item input,
+.feedback-form-item textarea {
+  font:inherit;
+  font-weight: 400;
+  color: #444444;
+
+  background-color: transparent;
+  border: 1px solid #444444;
+  opacity: 0.5;
+}
