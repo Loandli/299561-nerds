@@ -10,8 +10,27 @@ body {
 
   background-color: #ffffff;
 }
+.catalog-page {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #283136;
+
+  background-color: #ffffff;
+}
 a {
   text-decoration: none;
+}
+.visialy-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 .nav-background {
   background-color: #eeeeee;
@@ -33,7 +52,7 @@ a {
 .site-navigation a,
 .user-navigation a {
   color: #000000;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
 }
 .site-navigation a:hover,
@@ -45,8 +64,7 @@ a {
   color: #000000;
   opacity: 0.3;
 }
-.site-navigation a:visited,
-.user-navigation a:visited {
+.site-current a {
   border-bottom: 1px solid #fb565a;
 }
 .slider-list {
@@ -55,14 +73,16 @@ a {
 .slider-item h3 {
   font-size: 55px;
   line-height: 55px;
-  font-weight: 400;
+  font-weight: 500;
   color: #000000;
 }
 .button {
-  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
 
   text-align: center;
-  color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
 
@@ -82,7 +102,7 @@ a {
   font-weight: bold;
   color: #000000;
 }
-.self-slogan {
+.self-slogan b {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -112,7 +132,13 @@ a {
   font-weight: 400;
   color: #283136;
 }
-.selfnumbers-item p b {
+.selfnumbers-item b {
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: 700;
+  color: #000000;
+}
+.selfnumbers-item sup {
   font-size: 45px;
   line-height: 10px;
   font-weight: 700;
@@ -130,7 +156,102 @@ a {
 .done-project-item:active {
   opacity: 0.1;
 }
-.map-contacts p b {
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+}
+.filters-item {
+  border: none;
+}
+.filters-item legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+.filters-item ul {
+  list-style: none;
+  line-height: 20px;
+}
+.filters-option {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #283136;
+}
+.filters-option:hover {
+  color:#000000;
+}
+.filters-option:disabled {
+  color: #283136;
+  opacity: 0.3;
+}
+.sort h3 {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+.sort ul {
+  list-style: none;
+}
+.sort-list a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 0.3;
+}
+.sort-list-current a {
+  opacity: 1;
+}
+.sort-down,
+.sort-up {
+  font-size: 0px;
+}
+.catalog-list {
+  list-style: none;
+}
+.catalog-item h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+.catalog-item h3 a {
+  color: #000000;
+}
+.catalog-item p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+.button-price {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+.pagination-list {
+  list-style: none;
+}
+.pagination-list a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+}
+.map-contacts b {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -146,7 +267,7 @@ a {
   list-style: none;
 }
 .social-button {
-  color:
+  font-size: 0px;
 }
 .befriends {
   font-size: 36px;
@@ -154,7 +275,7 @@ a {
   font-weight: 700;
   color: #000000;
 }
-.feedback p b {
+.feedback b {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
