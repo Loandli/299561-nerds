@@ -201,6 +201,7 @@ a {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  text-transform: uppercase;
   color: #000000;
   opacity: 0.3;
 }
@@ -218,6 +219,7 @@ a {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #000000;
 }
 .catalog-item h3 a {
@@ -249,7 +251,13 @@ a {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  text-transform: uppercase;
   color: #000000;
+
+  background-color: #eeeeee;
+}
+.pagination-list a:hover {
+  background-color: #dfdfdf;
 }
 .map-contacts b {
   font-size: 18px;
