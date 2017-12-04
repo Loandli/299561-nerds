@@ -11,7 +11,7 @@
     <div class="nav-background">
       <header class="main-header">
         <nav class="main-nav">
-          <a class="main-header-logo>" href="#">
+          <a class="main-header-logo" href="#">
             <img src="svg/nerds-logo.svg" width="160" height="65" alt="Логитип Nerds">
           </a>
           <ul class="site-navigation">
@@ -28,39 +28,38 @@
       <main class="conteiner">
         <h1 class="visialy-hidden">Студия веб-дизайна Нердс</h1>
         <section class="slider">
-          <h2 class="visialy-hidden">Промо-слайды</h2>
-          <ul class="slider-list">
-            <li class="slider-item">
-              <h3>Долго, дорого,<br>
-                  скрупулезно</h3>
-              <p>Математически выверенный дизайн<br>
-                  для Вашего сайта и мобильного приложения
-              </p>
-              <img src="img/slide1.png" width="760" height="431" alt="Фото на промо">
-              <a class="button button-more" href="#">Узнать больше</a>
-            </li>
-            <li class="slider-item">
-              <h3>Любим математику<br>
-                  как никто другой</h3>
-              <p>Никакого креатива, только математические формулы<br>
-                  для расчета идеальных пропорций</p>
-              <img src="img/slide2.png" width="760" height="431" alt="Фото на промо">
-              <a class="button button-more" href="#">Узнать больше</a>
-            </li>
-            <li class="slider-item">
-              <h3>Только ночь,<br>
-                  только хардкор</h3>
-              <p>Работать днем, как все? Мы против этого.<br>
-                  Ближе к полуночи работа только начинается</p>
-              <img src="img/slide3.png" width="760" height="431" alt="Фото на промо">
-              <a class="button button-more" href="#">Узнать больше</a>
-            </li>
-          </ul>
-          <ul class="slider-list">
-            <li class="slider-indicator slider-indicator-corrent"><button class="slider-btn">Первый слайд</button></li>
-            <li class="slider-indicator"><button class="slider-btn">Второй слайд</button></li>
-            <li class="slider-indicator"><button class="slider-btn">Третий слайд</button></li>
-          </ul>
+          <div class="center">
+            <h2 class="visialy-hidden">Промо-слайды</h2>
+            <div class="slider-controls">
+              <i class="active"></i>
+              <i></i>
+              <i></i>
+            </div>
+            <ul class="slider-list">
+              <li class="slider-item">
+                <h3>Долго, дорого,<br>
+                    скрупулезно.</h3>
+                <p>Математически выверенный дизайн<br>
+                    для Вашего сайта или мобильного приложения.
+                </p>
+                <a class="button button-more" href="#">Узнать больше</a>
+              </li>
+              <li class="slider-item">
+                <h3>Любим математику<br>
+                    как никто другой</h3>
+                <p>Никакого креатива, только математические формулы<br>
+                    для расчета идеальных пропорций</p>
+                <a class="button button-more" href="#">Узнать больше</a>
+              </li>
+              <li class="slider-item">
+                <h3>Только ночь,<br>
+                    только хардкор</h3>
+                <p>Работать днем, как все? Мы против этого.<br>
+                    Ближе к полуночи работа только начинается</p>
+                <a class="button button-more" href="#">Узнать больше</a>
+              </li>
+            </ul>
+          </div>
         </section>
       </div>
       <section class="servises-main">
@@ -185,4 +184,11 @@
     </section>
     </footer>
   </body>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
+    <script type="text/javascript">
+	   $(function(){
+		     $.pixlayout({clip: true, src: "img/nerds-index.jpg", show:true, center:true, top:0, left:0, pervious: false});
+       });
+  </script>
 </html>
