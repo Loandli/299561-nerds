@@ -79,10 +79,11 @@ a {
 .button {
   display: block;
   width: 240px;
-  padding: 13px 0;
+  padding: 16px 0;
 
   font-size: 16px;
-  line-height: 24px;
+  line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -142,12 +143,12 @@ a {
 }
 .selfnumbers-item b {
   font-size: 45px;
-  line-height: 10px;
+  line-height: 10.6px;
   font-weight: 700;
   color: #000000;
 }
 .selfnumbers-item sup {
-  font-size: 45px;
+  font-size: 24px;
   line-height: 10px;
   font-weight: 700;
   color: #000000;
@@ -360,10 +361,16 @@ a {
   margin-right: 46px;
 }
 .user-navigation {
-  margin: auto;
-  margin-right: 144px;
+  margin:0;
+  padding: 0;
+
+  margin-top: 75px;
+  margin-left: 98px;
 }
 .box-link {
+  margin: 0;
+  padding: 0;
+
 
 }
 .center {
@@ -376,7 +383,7 @@ a {
   position: relative;
 
   background-color: #eeeeee;
-  margin-bottom: 80px;
+  margin-bottom: 78px;
 }
 .slider-item {
   display: none;
@@ -400,7 +407,7 @@ a {
 .slider-item p {
   max-width: 430px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 .slider-controls i {
   position: relative;
@@ -429,8 +436,8 @@ a {
 }
 .slider-controls {
   position: absolute;
-  left: 46%;
-  bottom: 106px;
+  left: 51.2%;
+  bottom: 108px;
   z-index: 100;
 
   width: 160px;
@@ -484,10 +491,153 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 80px
 }
 .servise-item {
   flex-basis: 300px;
+  margin-left: 16px;
 }
 .servise-item +li {
   margin-left: 100px;
+}
+.servise-item img {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
+}
+.servise-item h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+.servise-item p{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+}
+.button-servis-sites {
+  width: 160px;
+  padding: 16px 0;
+  line-height: 18px;
+  font-weight: 500;
+}
+.button-servis-apps {
+  width: 160px;
+  padding: 16px 0;
+  background-color: #17cf81;
+  line-height: 18px;
+  font-weight: 500;
+}
+.button-servis-presentation {
+  width: 160px;
+  padding: 16px 0;
+  background-color: #efc84a;
+  line-height: 18px;
+  font-weight: 500;
+}
+.self-promo {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 0;
+  margin-bottom: 49px;
+}
+.line-between {
+  width: 1160px;
+  height: 2px;
+  margin:0;
+  background-color: #eeeeee;
+  margin-bottom: 40px;
+  margin-left: 140px;
+}
+.conteiner-promo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-basis: 1200px;
+
+  margin: 0;
+  padding: 0;
+}
+.conteiner-left {
+  margin: 0;
+  padding: 0;
+  flex-basis: 660px;
+  margin-left: 36px;
+  margin-top: 18px;
+  margin-right: 140px;
+}
+.self-slogan {
+  margin-bottom: 33px;
+}
+.worklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 39px;
+  margin-bottom: 24px;
+}
+.self-promo-list li {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+}
+.conteiner-right {
+  margin: 0;
+  padding: 0;
+  flex-basis: 300px;
+
+}
+.atall {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  margin-left: 18px;
+  margin-bottom: 42px;
+}
+.selfnumbers-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  margin: 0;
+  padding: 0;
+}
+.selfnumbers-list li {
+  margin: 0;
+  padding: 0;
+  margin-right: 22px;
+}
+.secstrafe {
+  margin: 0;
+  padding: 0;
+  margin-top: 22px;
+}
+.done-project {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 0;
+}
+.done-project-list {
+  margin: 0;
+  padding: 0;
+
+  width: 1160px;
+  height: 180px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+
+  margin-left: 16px;
+  margin-bottom: 80px;
+}
+.done-project-item {
+  margin: 0;
+  padding: 0;
+
+  margin-right: 40px;
 }
