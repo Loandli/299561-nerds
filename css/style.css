@@ -326,12 +326,18 @@ a {
   min-width: 1200px;
   min-height: 118px;
 }
+.main-header {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .main-nav {
   margin: 0;
   padding: 0;
   display:flex;
   flex-direction: row;
-  min-width: 1440px;
+  justify-content: flex-start;
+  min-width: 1160px;
   min-height: 118px;
 }
 .main-nav a {
@@ -340,7 +346,6 @@ a {
   border: none;
   min-height: 78px;
   margin-top: 50px;
-  margin-left: 140px;
 }
 .site-navigation {
   margin: 0;
@@ -364,7 +369,7 @@ a {
   padding: 0;
 
   margin-top: 75px;
-  margin-left: 59px;
+  margin-left: auto;
 }
 .box-link {
   margin: 0;
@@ -378,11 +383,10 @@ a {
  position: relative;
  top: 2px;
 }
-.center {
-  width: 1200px;
-  margin: 0 140px;
+.conteiner{
+  width: 1160px;
+  margin: 0 auto;
   padding: 0 0;
-  box-sizing: border-box;
 }
 .slider {
   position: relative;
@@ -441,8 +445,8 @@ a {
 }
 .slider-controls {
   position: absolute;
-  left: 51.2%;
-  bottom: 108px;
+  left: 50%;
+  bottom: 106px;
   z-index: 100;
 
   width: 160px;
@@ -471,7 +475,7 @@ a {
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 86% 4px;
+  background-position: 93% 4px;
 }
 .slider-item:nth-child(2) {
   background-image: url("../img/slide2.png");
@@ -500,7 +504,6 @@ a {
 }
 .servise-item {
   flex-basis: 300px;
-  margin-left: 16px;
 }
 .servise-item +li {
   margin-left: 100px;
@@ -552,7 +555,6 @@ a {
   margin:0;
   background-color: #eeeeee;
   margin-bottom: 40px;
-  margin-left: 140px;
 }
 .conteiner-promo {
   display: flex;
@@ -567,7 +569,6 @@ a {
   margin: 0;
   padding: 0;
   flex-basis: 660px;
-  margin-left: 36px;
   margin-top: 18px;
   margin-right: 140px;
 }
@@ -647,7 +648,6 @@ a {
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 
-  margin-left: 16px;
   margin-bottom: 80px;
 }
 .done-project-item {
@@ -656,6 +656,16 @@ a {
 
   margin-right: 40px;
 }
+.map {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.main-footer {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 0;
+}
 .map-container {
   width: 1160px;
   height: 416px;
@@ -663,11 +673,14 @@ a {
   padding: 0 0;
 
   margin-bottom: 68px;
-
 }
 .map img {
   position: absolute;
   z-index: -1;
+}
+.map-marker {
+  margin: 0;
+  padding: 0;
 }
 .map-contacts {
   margin: 0;
@@ -679,7 +692,6 @@ a {
 
   position: relative;
   top: 54px;
-  left: 16px;
 
   display: flex;
   flex-direction: column;
@@ -707,7 +719,7 @@ a {
 .footer-center {
   width: 1160px;
   margin: 0 auto;
-  padding: 0 0;
+  padding: 0 20px;
 }
 .footer-social {
   margin: 0;
@@ -725,7 +737,6 @@ a {
   flex-direction: row;
   justify-content: flex-start;
 
-  margin-left: 16px;
   margin-right: 130px;
 }
 .social-list li {
