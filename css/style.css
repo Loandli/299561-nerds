@@ -119,6 +119,8 @@ a {
 }
 .self-promo-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .worklist {
   font-size: 16px;
@@ -583,6 +585,16 @@ a {
   margin: 0;
   padding: 0;
   margin-bottom: 24px;
+}
+.self-promo-list li::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 11px;
+  margin-bottom: 2px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
 }
 .conteiner-right {
   margin: 0;
